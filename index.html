@@ -1,29 +1,29 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <title>GaDii</title>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Cambo" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/pages.css">
+  <script src="https://use.fontawesome.com/2e32f7f95b.js"></script>
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link data-turbolinks-track="true" href="/assets/application-efba866e71441ba4eee6680d3975d138.css" media="all" rel="stylesheet" />
-  <meta content="authenticity_token" name="csrf-param" />
-<meta content="B1u6CF7xT6tAcAGm1aQXhjoFgjm7iVivBtG9/AuuTGE=" name="csrf-token" />
 </head>
 <body>
 
 <div class="container">
-  <div class="row">
-    <div id="logo" div="col-xs-12">
-      <h1 class="text-center">GADII</h1>
-    </div>
-  </div>
+  <h1 id="logo" class="text-center">
+    GADII
+  </h1>
 
 
-  <div class="row">
-    <div id="intro" div="col-xs-12">
-      <p class="text-center">I'm GaDii, a Ruby on Rails developer.</p>
-    </div>
+  <div id="intro" class="col-xs-12 text-center">
+    I'm GaDii, a Ruby on Rails developer.
   </div>
 
 
@@ -32,26 +32,26 @@
 
   <hr />
 
-  <div class="row">
-    <h2 class="text-center">SKILL</h2>
-  </div>
+  <h2 class="text-center">SKILL</h2>
 
   <div class="row">
     <div id="skill" class="col-xs-12">
       <h4>Server side</h4>
-      <p>Ruby on Rails, Grape, Sinatra</p>
+      <p>Ruby: Ruby on Rails, Grape, Sinatra</p>
+      <p>NodeJS: Express</p>
 
       <h4>Client side</h4>
-      <p>HTML, CSS(SCSS), Javascript(CoffeeScript), jQuery, Bootstrap, SUSY, Bourbon</p>
+      <p>HTML, CSS(SCSS), Javascript(CoffeeScript), Bootstrap, SUSY, Bourbon</p>
 
       <h4>Testing</h4>
-      <p>RSpec</p>
+      <p>Ruby: RSpec</p>
+      <p>NodeJS: Mocha, Chai</p>
 
       <h4>Database</h4>
-      <p>PostgreSQL, MySQL, Redis</p>
+      <p>PostgreSQL, MySQL, Redis, MongoDB</p>
 
-      <h4>Server & Deploying tools</h4>
-      <p>Linux, Capistrano, Mina and Chef</p>
+      <h4>Provisioning & Deploying tools</h4>
+      <p>Ansible, Chef, Capistrano and Mina</p>
 
       <h4>AWS</h4>
       <p>EC2, RDS, S3, IAM, SES, CloudFront</p>
@@ -64,18 +64,81 @@
   <hr />
 
   <div id="portfolio">
-    <div class="row">
-      <h2 class="text-center">PORTFOLIO</h2>
-    </div>
+    <h2 class="text-center">PORTFOLIO</h2>
 
     <div class="row">
-      <div class="col-sm-6">
-        <a href="http://www.charden.co.uk" class="thumbnail" target="blank">
-          <img alt="Online quote" height="auto" src="/assets/online_quote-5a6e3810f25b419f80bdd1f038062e5c.png" width="100%" />
+      <div class="col-sm-4">
+        <a href="https://resumegenius.com" class="thumbnail" target="blank">
+          <img alt="Resume builder" src="assets/resume_builder.png" />
         </a>
       </div>
 
-      <div class="col-sm-6 col-xs-12">
+      <div class="col-sm-8 col-xs-12">
+        <h3>ResumeGenius</h3>
+        <p>
+          Top 10 resume online builder on search engine. Provides step by step wizard to guide users filling their resume in only few steps.
+        </p>
+
+        <p>
+          The service was built with Rails then migrated to Rails with React.
+        </p>
+
+        <p><a href="https://resumegenius.com/" target="blank">Visit ResumeGenius</a></p>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+      <div class="col-sm-4">
+        <a href="https://legaltemplates.net" class="thumbnail" target="blank">
+          <img alt="Legal document builder" src="assets/legal_document.png" />
+        </a>
+      </div>
+
+      <div class="col-sm-8 col-xs-12">
+        <h3>LegalTemplates</h3>
+        <p>
+          Help users in the US to build various legal documents online easily.
+        </p>
+
+        <p>
+          The service was built with Rails then migrated to Rails with React.
+        </p>
+
+        <p><a href="https://legaltemplates.net" target="blank">Visit LegalTemplates</a></p>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+      <div class="col-sm-4">
+        <a href="https://www.freelancewriting.com" class="thumbnail" target="blank">
+          <img alt="Writer-customer matching platform" src="assets/writer_platform.png" />
+        </a>
+      </div>
+
+      <div class="col-sm-8 col-xs-12">
+        <h3>FreelanceWriting</h3>
+        <p>
+          A platform for users hiring writers or outsourcing their blog posts, articles, press release, etc. Also let writers find jobs easily.
+        </p>
+
+        <p><a href="https://www.freelancewriting.com" target="blank">Visit FreelanceWriting</a></p>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+      <div class="col-sm-4">
+        <a href="http://www.charden.co.uk" class="thumbnail" target="blank">
+          <img alt="Online quote" src="assets/online_quote.png" />
+        </a>
+      </div>
+
+      <div class="col-sm-8 col-xs-12">
         <h3>Online Insurance System</h3>
         <p>Insurance quoting system for people to <a href="http://raamsys.charden.co.uk/online_quote/start?ag_no=BSVF7oniq9yPqInzzUnDpw==" target="blank">quote and buy</a> (or click the button on the top right corner of website) a policy online.</p>
 
@@ -86,65 +149,39 @@
     <hr />
 
     <div class="row">
-      <div class="col-sm-6 col-xs-12">
+      <div class="col-sm-4">
+        <img alt="Raamsys" class="thumbnail" src="assets/raamsys.png" />
+      </div>
+
+      <div class="col-sm-8 col-xs-12">
         <h3>Internal Insurance System</h3>
         <p>Internal insurance system for company to track policy, generate report, make claim, etc.</p>
       </div>
-
-      <div class="col-sm-6">
-        <img alt="Raamsys" class="thumbnail" height="auto" src="/assets/raamsys-1df88c2d66d03288fd18e32196019f84.png" width="100%" />
-      </div>
     </div>
 
     <hr />
 
     <div class="row">
-      <div class="col-sm-6">
-        <a href="http://readboo.com" class="thumbnail" target="blank">
-          <img alt="Readboo" height="auto" src="/assets/readboo-c22eed2db72e655724e77acd988833cc.png" width="100%" />
-        </a>
+      <div class="col-sm-4">
+        <img alt="Fabulaz" src="assets/fabulaz.png" />
       </div>
 
-      <div class="col-sm-6 col-xs-12">
-        <h3>ReadBoo</h3>
-        <p>A platform for people exchanging books, getting notified of new books information gathered by ReadBoo. Read more on <a href="http://readboo.com/about" target="blank">about ReadBoo</a></p>
-
-        <p>
-          <a href="http://readboo.com" target="blank">Visit ReadBoo</a> <br />
-          <a href="http://github.com/GGD/social_library" target="blank">code on Github</a>
-        </p>
-      </div>
-    </div>
-
-    <hr />
-
-    <div class="row">
-      <div class="col-sm-6 col-xs-12">
+      <div class="col-sm-8 col-xs-12">
         <h3>Fabulaz</h3>
         <p>Connect people by sending electronic vouchers. Fabulaz offers various electronic vouchers in Taiwan, includes 7-11 (the largest supermarket in Taiwan), restaurants, coffee shops, etc.</p>
-
-        <p>
-          <a href="https://fabulaz.com" target="blank">Visit Fabulaz</a> <br />
-        </p>
-      </div>
-
-      <div class="col-sm-6">
-        <a href="https://fabulaz.com" class="thumbnail" target="blank">
-          <img alt="Fabulaz" height="auto" src="/assets/fabulaz-611e28ea423fca75351ec231903f639e.png" width="100%" />
-        </a>
       </div>
     </div>
 
     <hr />
 
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-4">
         <a href="http://checkalong.herokuapp.com" class="thumbnail" target="blank">
-          <img alt="Checkit" height="auto" src="/assets/checkit-07243f399b73861e028fc9416eadde07.png" width="100%" />
+          <img alt="Checkit" src="assets/checkit.png" />
         </a>
       </div>
 
-      <div class="col-sm-6 col-xs-12">
+      <div class="col-sm-8 col-xs-12">
         <h3>Check Along</h3>
         <p>Never miss a remarkable place anymore! Input your starting point and destination, Check Along will find remarkable places near the route for you. </p>
 
@@ -157,34 +194,13 @@
     <hr />
 
     <div class="row">
-      <div class="col-sm-6 col-xs-12">
-        <h3>MyFlix</h3>
-        <p>Lightweight Netflix project offering videos subscription(with payment), uploading, watching online, rating, and tracking.</p>
-
-        <p>
-          <a href="http://ggd-myflix.herokuapp.com" target="blank">Visit myflix-demo</a> <br />
-          (account: tifa@example.com, password: 1234) <br />
-          <a href="http://github.com/GGD/myflix-demo" target="blank">code on Github</a>
-        </p>
-      </div>
-
-      <div class="col-sm-6">
-        <a href="http://ggd-myflix.herokuapp.com" class="thumbnail" target="blank">
-          <img alt="Myflix" height="auto" src="/assets/myflix-0c2641b632b7663ec57882c3ca46d1e7.png" width="100%" />
-        </a>
-      </div>
-    </div>
-
-    <hr />
-
-    <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-4">
         <a href="http://www.kdanmobile.com/en/creative_cloud.html" class="thumbnail" target="blank">
-          <img alt="Data center" height="auto" src="/assets/data_center-98e6a9bb5077e8018640a44f1a12a632.png" width="100%" />
+          <img alt="Data center" src="assets/data_center.png" />
         </a>
       </div>
 
-      <div class="col-sm-6 col-xs-12">
+      <div class="col-sm-8 col-xs-12">
         <h3>Data Center</h3>
         <p>File backup/restore system for PDF Reader, Noteledge, Animation Desk at Kdan Mobile. To speed up backup/restore I needed to analyze the structure of file and only move the modified part.</p>
 
@@ -195,48 +211,68 @@
     <hr />
 
     <div class="row">
-      <div class="col-sm-6 col-xs-12">
+      <div class="col-sm-4">
+        <a href="http://cloud.kdanmobile.com" class="thumbnail" target="blank">
+          <img alt="Kdan creative cloud" src="assets/kdan_creative_cloud.png" />
+        </a>
+      </div>
+
+      <div class="col-sm-8 col-xs-12">
         <h3>Member Center</h3>
         <p>Offering SSO(single sign on) for apps in Kdan Mobile to authorize in-app purchasing.</p>
 
         <p><a href="http://cloud.kdanmobile.com" target="blank">Visit Member Center</a></p>
       </div>
-
-      <div class="col-sm-6">
-        <a href="http://cloud.kdanmobile.com" class="thumbnail" target="blank">
-          <img alt="Kdan creative cloud" height="auto" src="/assets/kdan_creative_cloud-a21ff9febf240eb14f6572a1bb8d234b.png" width="100%" />
-        </a>
-      </div>
     </div>
 
     <hr />
 
     <div class="row">
-      <div class="col-sm-6">
-        <img alt="Isales" class="thumbnail" height="auto" src="/assets/isales-d5fa2a964b6d1a0110ed71a0680ee720.png" width="100%" />
+      <div class="col-sm-4">
+        <img alt="Isales" class="thumbnail" src="assets/isales.png" />
       </div>
 
-      <div class="col-sm-6 col-xs-12">
+      <div class="col-sm-8 col-xs-12">
         <h3>Sales Report System</h3>
         <p>Collecting sales information and producing reports for Kdan Mobile periodically.</p>
-
       </div>
     </div>
 
     <hr />
 
     <div class="row">
-      <div class="col-sm-6 col-xs-12">
+      <div class="col-sm-4">
+        <a href="http://epaper.kdanmobile.com" class="thumbnail" target="blank">
+          <img alt="Epaper" src="assets/epaper.png" />
+        </a>
+      </div>
+
+      <div class="col-sm-8 col-xs-12">
         <h3>Email Subscription</h3>
         <p>Email subscription and sending system for Kdan Mobile.</p>
 
         <p><a href="http://epaper.kdanmobile.com" target="blank">Visit Epaper</a></p>
       </div>
+    </div>
 
-      <div class="col-sm-6">
-        <a href="http://epaper.kdanmobile.com" class="thumbnail" target="blank">
-          <img alt="Epaper" height="auto" src="/assets/epaper-7cddcfa94ca41d1159bea7574f6cea21.png" width="100%" />
+    <hr />
+
+    <div class="row">
+      <div class="col-sm-4">
+        <a href="http://ggd-myflix.herokuapp.com" class="thumbnail" target="blank">
+          <img alt="Myflix" src="assets/myflix.png" />
         </a>
+      </div>
+
+      <div class="col-sm-8 col-xs-12">
+        <h3>MyFlix</h3>
+        <p>Lightweight Netflix project offering videos subscription(with payment), uploading, watching online, rating, and tracking.</p>
+
+        <p>
+          <a href="http://ggd-myflix.herokuapp.com" target="blank">Visit myflix-demo</a> <br />
+          (account: tifa@example.com, password: 1234) <br />
+          <a href="http://github.com/GGD/myflix-demo" target="blank">code on Github</a>
+        </p>
       </div>
     </div>
   </div>
@@ -262,23 +298,49 @@
 
     <br />
 
+    <h4>Tarokosoftware - 2015-present</h4>
+    <p>
+      Position: Tech Lead
+    </p>
+    <p>
+      An umbrella company with multiple apps.
+    </p>
+    <ul>
+      <li>Design and implement apps follow PCI Compaliance.</li>
+      <li>Migrate Rails to Rails with React.</li>
+      <li>Design and implement the architecture of apps.</li>
+      <li>Refactor functions and design architecture for better quality and maintenance.</li>
+      <li>Mentor and guide junior developers.</li>
+    </ul>
+
+    <small>Use: Ruby on Rails, Trailblazer, Stripe, NodeJS, ReactJS, Chef</small>
+
+    <br />
+    <br />
+
     <h4>JC Management - 2014-2015</h4>
+    <p>
+      Position: Tech Lead and Manager
+    </p>
     <p>
       The company focuses on insurance system for HQ in the UK.
     </p>
     <ul>
-      <li>Mentor and guide junior developers.</li>
+      <li>Redesign database with hybrid RDBMS and NoSQL to improve database performance by reducing 40% queries.</li>
       <li>Refactor functions and design architecture for better quality and maintenance.</li>
       <li>Organize internal trainings for RSpec, Redis and CoffeeScript.</li>
-      <li>Redesign database with hybrid RDBMS and NoSQL to improve database performance by reducing 40% queries.</li>
+      <li>Mentor and guide junior developers.</li>
     </ul>
 
-    <small>Use: Ruby on Rails, RSpec, PostgreSQL, Redis and AWS</small>
+    <small>Used: Ruby on Rails, RSpec, PostgreSQL, Redis and AWS</small>
 
     <br />
     <br />
 
     <h4>FABULAZ - 2014</h4>
+    <p>
+      Position: Senior Developer
+    </p>
     <p>
       The startup offers electronic vouchers including B2C and B2B.
     </p>
@@ -294,6 +356,9 @@
     <br />
 
     <h4>KDAN MOBILE - 2013-2014</h4>
+    <p>
+      Position: Developer
+    </p>
     <p>
       Kdan Mobile focus on content creating apps such as drawing, animation, and PDF. Achieved 20 millions downloaded, with 10 thousands active users per day.
     </p>
@@ -311,6 +376,9 @@
 
     <h4>CUBI INTERNET - 2012</h4>
     <p>
+      Position: Developer
+    </p>
+    <p>
       The startup made auction system like QuiBids.
     </p>
     <ul>
@@ -324,6 +392,9 @@
     <br />
 
     <h4>INVENTIVE ALLIANCE TECHNOLOGY - 2011-2012</h4>
+    <p>
+      Position: Developer
+    </p>
     <p>
       An agency worked for government.
     </p>
